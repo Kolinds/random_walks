@@ -18,4 +18,4 @@ simple_graph: Grafica de manera simple unos valores dados con sus incertidumbre 
 
 mean_times_graph.py: Grafica los tiempos medios en función de la profundidad, junto a una función analítica seleccionada, en este caso la que define los mean times con el depth.
 
-
+mean_node_separation1/2.txt: Los valores obtenidos en función de la separación nodal para el último apartado de GBT, obtenidos utilizando opt_code.py, cogiendo la profundidad exacta (ignorando el resto), y seleccionando los nodos inicial y final correspondiente.
