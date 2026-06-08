@@ -1,21 +1,34 @@
+HYPERCUBE
+For the hypercube, the programs used were 8 in total (4 .cpp for the simulations and 4 .py to graph):
+
+- hypercube.cpp is used for the histogram (plotted with histograma.py) and for the time vs depth (plotted with tiempo_acumulado.py)
+
+- hypercube mitad.cpp is used for the time vs depth beginning in a MIDDLE vertex (plotted with tiempo acumulado.py too)
+
+- hypercube dimension.cpp is used for the time vs dimension (plotted with dimension.py)
+
+- hypercube separation.cpp is used for the time vs node separation (plotted with separacion_graph.py)
+
+At the beginning of each program there is a little explanation of what it does and the files it gives (for the .cpp) or the explanation of what it plots and what files it takes (for the .py)
+
+
+
 GLUED BINARY TREE
+The folders deprecated, hitting_graphs, and slides do not contain important information; they are materials used during the project. The remaining files have the following functionality:
 
-Las carpetas decrecated, hitting_graphs y slides no contienen información importante, son cosas usadas para el trabajo. El resto de códigos tienen la siguiente funcionalidad:
+opt_code_original.py: The original/base code. It computes the hitting times for a given number of simulations and a specified graph depth.
 
-opt_code_original.py: Es el código base, calculos los hitting times para un ciertos número de simulaciones y una profundidad dada del grafo.
+opt_code.py: Runs simulations from an initial depth to a final depth and outputs the mean value for each depth together with its uncertainty.
 
-opt_code: Este código realiza las simulaciones desde una profundidad inicial a una final, y da los valores de la media de cada profundidad con su incertidumbre.
+opt_code_ggaussian.py: Computes the total number of time steps that a random walk spends at a given depth for a specified number of simulations.
 
-opt_code_ggaussian.py: Calcula el número de time steps total que ha pasado un random walk a una profundidad dada para una cantidad de simulaciones especificada.
+camino_gen.py: Computes and saves the exact sequence of nodes visited by a random walker during a single simulation.
 
-camino_gen.py: Calcula y guarda el trayecto concreto de nodos que ha seguido un random walker a lo largo de 1 sola simulación.
+anim_graph.py: Animates the trajectory generated and saved by camino_gen.py.
+graph_hittimes.py: Displays the distribution of hitting times along with the corresponding GBT of the selected dimension.
 
-anim_graph.py: Anima el trayecto guardado por camino_gen.py.
+simple_graph.py: Produces a simple plot of given values with their uncertainties (used for the node-separation analysis).
 
-graph_hittimes.py: Muestra la distribución de los hitting_times, junto con el GBT de la dimensión correspondiente.
+mean_times_graph.py: Plots the mean times as a function of depth together with a selected analytical function; in this case, the function that describes the mean times as a function of depth.
 
-simple_graph: Grafica de manera simple unos valores dados con sus incertidumbre (usado para el apartado en función del node separation).
-
-mean_times_graph.py: Grafica los tiempos medios en función de la profundidad, junto a una función analítica seleccionada, en este caso la que define los mean times con el depth.
-
-mean_node_separation1/2.txt: Los valores obtenidos en función de la separación nodal para el último apartado de GBT, obtenidos utilizando opt_code.py, cogiendo la profundidad exacta (ignorando el resto), y seleccionando los nodos inicial y final correspondiente.
+mean_node_separation1.txt / mean_node_separation2.txt: Contain the values obtained as a function of node separation for the final GBT section. These values were generated using opt_code.py by selecting the exact depth of interest (ignoring the others) and choosing the corresponding initial and target nodes.
