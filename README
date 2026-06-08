@@ -1,0 +1,21 @@
+GLUED BINARY TREE
+
+Las carpetas decrecated, hitting_graphs y slides no contienen información importante, son cosas usadas para el trabajo. El resto de códigos tienen la siguiente funcionalidad:
+
+opt_code_original.py: Es el código base, calculos los hitting times para un ciertos número de simulaciones y una profundidad dada del grafo.
+
+opt_code: Este código realiza las simulaciones desde una profundidad inicial a una final, y da los valores de la media de cada profundidad con su incertidumbre.
+
+opt_code_ggaussian.py: Calcula el número de time steps total que ha pasado un random walk a una profundidad dada para una cantidad de simulaciones especificada.
+
+camino_gen.py: Calcula y guarda el trayecto concreto de nodos que ha seguido un random walker a lo largo de 1 sola simulación.
+
+anim_graph.py: Anima el trayecto guardado por camino_gen.py.
+
+graph_hittimes.py: Muestra la distribución de los hitting_times, junto con el GBT de la dimensión correspondiente.
+
+simple_graph: Grafica de manera simple unos valores dados con sus incertidumbre (usado para el apartado en función del node separation).
+
+mean_times_graph.py: Grafica los tiempos medios en función de la profundidad, junto a una función analítica seleccionada, en este caso la que define los mean times con el depth.
+
+

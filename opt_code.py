@@ -64,9 +64,9 @@ std_times = np.empty(final_depth//2 + 1, dtype=np.float64)  # NUEVO: Array para 
 
 
 if __name__ == "__main__":
-    for depth in range(final_depth, final_depth + 1, 2):
+    for depth in range(2, final_depth + 1, 2):
         total_nodes = 2**(depth // 2 + 1) + 2**(depth // 2) - 2
-        resultados = binary_tree_sim(depth, n_simulaciones, 1, 20)
+        resultados = binary_tree_sim(depth, n_simulaciones, 1, total_nodes)
         
         # Calculamos la media y la desviación estándar para esta profundidad
         mean_times[depth//2] = resultados.mean()
